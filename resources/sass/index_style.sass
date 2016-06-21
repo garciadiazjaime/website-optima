@@ -1,0 +1,473 @@
+/* ****************** INDEX ************** */
+
+.home
+	h1
+		display: none
+		margin: 0
+		
+	#header
+		background: url("../images/fe/shadow_menu.png") no-repeat fixed center bottom transparent
+		position: relative
+	
+		#header_wrapp
+			background: transparent
+		
+	#content
+		margin: 0
+	
+#home_why
+	color: #ffffff
+	font-size: 18px
+	@extend %opensanssemibold
+	letter-spacing: .03em
+	margin: 0 0 10px
+	padding: 45px 0 0
+	
+	p
+		display: inline-block
+		margin: 0
+		text-align: left
+		vertical-align: bottom
+		width: 99%
+
+	p.first
+		font-size: 15px
+	
+	.full_width_separator
+		margin-bottom: 0
+	
+#slideshow_why
+	font-size: 20px
+	@extend %opensanslight
+	margin: 0 0 0 auto
+	width: 50%
+	
+	.slide
+	
+		p
+			width: 100%
+			
+	.slide.show
+		display: block
+	
+#quotes_nav	
+	.nav_prev
+		background-position: left 0
+	
+		&:hover
+			background-position: left -32px
+			
+	.nav_next
+		background-position: right -67px
+		
+		&:hover
+			background-position: right -109px
+			
+#home_services
+	@include background-image(linear-gradient(#ffffff 50%, #ededee 100%))
+	border-bottom: 2px solid #ffffff
+	font-size: 15px
+	margin: 0
+	padding: 20px 0 15px
+	
+	ul
+		display: block
+		list-style-type: none
+		margin: 0
+		padding: 0
+	
+	li
+		background: url(#{$background_fe}sprite_index.png) -360px -150px
+		display: inline-block
+		height: 188px
+		margin: 0 0 0 2%
+		padding: 0 0 10px
+		vertical-align: top
+		width: 23%
+		
+	.home_services_thumb
+		div
+			@include background-image(linear-gradient(white, white 82%, #EDEDEE 110%, #EDEDEE 114%))
+			border: 1px solid #B5B5B5
+			@include border-radius()
+			display: block
+			@extend %opensanssemibold
+			position: relative
+	
+			&:hover
+		
+				hr
+					background: #563A83
+				
+				
+				.icon_border
+					background-position: -33px -305px
+			
+	li.first
+		margin: 0
+		
+	hr
+		background: #c6cd2c
+		border: none
+		display: block
+		height: 4px
+		margin: 0
+		position: absolute
+		top: 5px
+		width: 205px
+		
+	.index_serv_wrapp
+		background: url(#{$background_fe}sprite_index.png) 0 0 no-repeat
+		display: block
+		height: 47px
+		padding: 15px 5px 125px
+		
+	#s_support
+		.index_serv_wrapp
+			background-position: 3px 66px
+		
+	#s_talent
+		.index_serv_wrapp
+			background-position: -235px 66px
+	
+	#s_organization
+		.index_serv_wrapp
+			background-position: -475px 66px
+	
+	#s_transitions
+		.index_serv_wrapp
+			background-position: -716px 66px
+			
+	.icon_border
+		background: url(#{$background_fe}sprite_index.png) -105px -305px no-repeat
+		bottom: -17px
+		display: block
+		height: 51px
+		left: 80px
+		overflow: hidden
+		position: absolute
+		width: 52px
+		
+	.icon
+		background: url(#{$background_fe}sprite_index.png) -37px -195px no-repeat
+		display: block
+		height: 42px
+		margin: 5px auto 0
+		width: 42px
+		
+	
+	#s_support
+		.icon
+			background-position: -38px -195px
+
+	#s_talent
+		.icon
+			background-position: -277px -194px
+
+	#s_organization
+		.icon
+			background-position: -518px -194px
+
+	#s_transitions
+		.icon
+			background-position: -757px -195px
+			
+
+#service_description
+	@include background-image(linear-gradient(#EDEDEE 0, #EDEDEE 0, #FFFFFF .4%, #FFFFFF 4%))
+	padding: 20px 0 0
+	
+	.service_description_slide
+		display: none
+		@include transition(display 0.5s)
+	
+	.service_description_slide.show
+		display: block
+		
+	.image_desc_slide
+		background: url(#{$background_fe}sprite_index.png) 0 -596px no-repeat
+		height: 227px
+		width: 463px
+		
+		a, a:link
+			background-color: rgba(0, 0, 0, .0) 
+			display: block
+			height: 217px
+			@include transition(background-color 0.5s)
+			
+			&:hover
+				background-color: rgba(0, 0, 0, .1)
+		
+	#c_s_support
+		display: block
+		opacity: 1
+		
+		.image_desc_slide
+			background-position:  0 -596px
+		
+
+	#c_s_talent
+		.image_desc_slide
+			background-position:  -517px -596px
+
+	#c_s_organization
+		.image_desc_slide
+			background-position:  0 -882px
+
+	#c_s_transitions
+		.image_desc_slide
+			background-position:  -517px -882px
+
+.service_description_slide
+	opacity: 0
+	position: relative
+	
+	h3
+		margin-top: 0
+		
+	.column.first
+		padding: 0 1% 0 6% 
+		width: 42%
+		
+		span
+			background: url(#{$background_fe}sprite_index.png) -714px -284px no-repeat
+			display: inline-block
+			height: 41px 
+			left: 0
+			position: absolute
+			top: 0
+			width: 36px
+
+#c_s_support
+	.column.first
+		span
+			background-position: -714px -284px
+
+#c_s_talent
+	.column.first
+		span
+			background-position: -858px -284px
+
+#c_s_organization
+	.column.first
+		span
+			background-position: -714px -352px
+
+#c_s_transitions
+	.column.first		
+		span	
+			background-position: -858px -352px
+			
+.top_triangle
+	border-left: 15px solid transparent
+	border-right: 15px solid transparent
+	border-bottom: 15px solid #ffffff
+	height: 0
+	display: block
+	left: 92px
+	position: absolute
+	top: -28px
+	width: 0 
+
+#c_s_support
+	.top_triangle
+		left: 92px
+
+#c_s_talent
+	.top_triangle
+		left: 331px
+
+#c_s_organization
+	.top_triangle
+		left: 568px
+
+#c_s_transitions
+	.top_triangle
+		left: 806px
+		
+		
+#title_twitter a, #title_twitter a:link, #title_facebook a, #title_facebook a:link
+	background: url(#{$background_fe}sprite_index.png) left -1181px no-repeat
+	display: block
+	font-weight: normal
+	padding: 5px 0 5px 35px
+	
+	&:hover
+		color: lighten(black, 25)
+	
+#title_facebook a, #title_facebook a:link
+	background-position: left -1315px
+		
+		
+#job_available_intro, #welcome_message_talent div, #welcome_message_knowledge_sh div
+	background: url(#{$background_fe}separators_sprite.png) left -417px no-repeat
+	border: 2px solid #c6cd2c
+	border-top: none
+	padding: 26px 16px
+	
+	ul
+		list-style-type: none
+		padding: 0 30px
+
+		a, a:link
+			color: #4E4D50
+			display: block
+			font: 15px Calibri, Verdana, sans-serif
+			letter-spacing: .03em
+			padding: 10px 0
+
+			&:hover
+				color: lighten(#4E4D50, 10)
+		
+	li
+		border-top: 1px solid #C7CD2D
+		display: block
+		
+	li.first
+		border: none
+	
+	.position_title, .position_location
+		display: inline-block
+		padding: 0 1% 0 0
+		vertical-align: top
+		font-weight: bold
+		width: 71%
+		
+	.position_location
+		font-size: 12px
+		padding: 0 6% 0 0
+		font-weight: normal
+		width: 22%
+	
+#j_a_i_date
+	background: #F7F7F7
+	border: 1px solid #969696
+	border-bottom: 3px solid #969696
+	@extend %opensansbold
+	font-size: 14px
+	padding: 10px 30px
+	text-transform: uppercase
+	
+	
+a.purple_button
+	background-color: #563A83
+	@include background-image(linear-gradient(#563A83, #382856))
+	@include border-radius()
+	border-bottom: 3px solid #1C1840
+	color: #ffffff
+	display: block
+	@extend %opensanslight
+	letter-spacing: .03em
+	margin: 20px 0 0
+	padding: 10px 15px
+	font-size: 16px
+	font-weight: normal
+	text-align: center
+	
+	&:hover
+		background-color: #68479d
+		@include background-image(linear-gradient(#6c4aa3, #4a3572))
+		color: #ffffff
+		
+	span
+		background: url(#{$background_fe}sprite_general.png) right -62px no-repeat
+		display: block	
+		
+#clients_slide
+	list-style-type: none
+	margin: 0 0 60px
+	padding: 0
+	position: relative
+	width: 2000px
+	li
+		display: inline-block
+		vertical-align: top
+		width: 150px
+	
+	#cl_great_batch
+		background-position: -504px -1235px
+	
+	#cl_navico
+		background-position: -820px -1400px
+	
+	#cl_fender
+		background-position: -820px -1232px
+	
+	#cl_amcor
+		background-position: -669px -1232px
+		
+	#cl_kavlico
+		background-position: -494px -1400px
+		
+	#cl_medtronic
+		background-position: -669px -1400px
+		
+	#cl_nx_stage
+		background-position: -504px -1550px
+		
+	#cl_ti_automotive
+		background-position: -669px -1550px
+		
+	#cl_trw
+		background-position: -826px -1550px
+		
+	#cl_3m
+		background-position: -669px -1710px
+	#cl_valeo
+		background-position: -504px -1710px
+	
+	a
+		background: url(#{$background_fe}sprite_index.png) -381px -1239px no-repeat
+		display: block
+		height: 85px
+		line-height: 50000em
+		overflow: hidden
+		position: relative
+	
+	#white_decoration
+		@include background-image(linear-gradient(left, rgba(255, 255, 255, 0) 70%, #ffffff 84%))
+		display: block
+		height: 85px
+		left: 0
+		pointer-events: none
+		position: absolute
+		top: 0
+		width: 100%
+		
+		a
+			background: transparent
+			display: block
+			height: 55px
+			pointer-events: none
+			
+	
+#big_contact_button
+	border-bottom: 2px solid #838E2D
+	border-top: 2px solid #f5f7c5
+	@include background-image(linear-gradient(#C7CD2D, #bbbb27))
+	@include border-radius()
+	display: block
+	font-size: 28px
+	@extend %opensansbold
+	margin: 50px  0 0
+	padding: 20px 20px 20px 40px
+	
+	&:hover
+		@include background-image(linear-gradient(#d9df32, #d4d42c))
+	
+	span
+		background: url(#{$background_fe}sprite_index.png) left -1461px no-repeat
+		display: block
+		padding: 20px 25px 20px 130px
+		
+	em	
+		background: url(#{$background_fe}sprite_general.png) right -62px no-repeat
+		color: #ffffff
+		display: inline-block
+		font-size: 17px
+		font-style: normal
+		@extend %opensanssemibold
+		padding: 0 30px 0 0
+		
+		
+		

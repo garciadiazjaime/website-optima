@@ -1,0 +1,183 @@
+#contact_map
+	margin-top: 30px
+
+#contact_form
+	margin-top: 30px
+
+.contact_image, .contact_text
+	display: inline-block
+	vertical-align: top
+	width: 35%
+	
+.contact_image	
+	background: url(#{$background_fe}sprite_contact.jpg) 0 0 no-repeat
+	height: 130px
+	
+#cont_olivia
+	background-position: 0 0
+		
+#cont_carlos
+	background-position: 0 -319px
+		
+.contact_text
+	width: 65%
+		
+.contact
+	.purple_green_line
+		span
+			margin: 0 0 -1px -50px
+			width: 365px
+			
+	.extra_top_space
+		margin-top: 50px
+		
+	.half
+		padding-bottom: 0
+		
+	.big_green_bullet
+		p
+			@extend %opensans
+			
+		li
+			min-height: 110px
+#knowledge_sharing
+	h3
+		margin-top: 20px
+		margin-bottom: 10px
+		
+	a
+		font-weight: normal
+		
+		&:hover
+			color: lighten(#000000, 35)
+		
+		
+/* ***************** Knowledge Sharing **************** */
+#welcome_message_knowledge_sh
+	h4
+		font-size: 16px
+		margin: 0 0 12px
+		text-transform: uppercase
+
+#knowledge_list
+	list-style-type: none
+	margin: 50px 0 10px
+	padding: 0
+	
+	li
+		margin: 0 0 25px
+	
+	.document_description
+		background: url(../images/fe/sprite_knowledge_sharing.jpg) 0 0 no-repeat
+		display: inline-block
+		padding: 0 0 0 9%
+		vertical-align: top
+		width: 69%
+
+	h2
+		border-bottom: 2px solid #999999
+		color: #563a83
+		display: block
+		font-family: "Open Sans Semibold",Verdana,sans-serif
+		margin: 0
+		padding: 0 0 10px
+		text-transform: none
+	
+		a
+			color: #563a83
+			display: block
+			font-weight: normal
+			
+			&:hover
+				color: lighten( #563a83, 15)
+	
+	.document_date
+		border-top: 1px solid #d6d6d6
+		font-size: 85%
+		padding: 3px 0 0
+	
+	.document_download	
+		background: url(../images/fe/sprite_knowledge_sharing.jpg) center -247px no-repeat
+		display: inline-block
+		font-weight: normal
+		margin: 0 0 0 3%
+		padding: 45px 0 0
+		vertical-align: top
+		width: 19%
+		
+		a
+			background: url(../images/fe/sprite_knowledge_sharing.jpg) left -654px no-repeat
+			display: block
+			font-family: "Open Sans Regular",Verdana,sans-serif
+			font-weight: normal
+			padding: 0 0 0 35px
+			
+			&:hover
+				color: lighten(#000000, 35)
+	
+.knowledge_sharing
+	label
+		display: inline-block
+		margin: 9px 0 10px
+		width: 15%
+	
+	.custom_submit
+		background: url(#{$background_fe}submit_button_background.jpg) right -220px no-repeat
+		@include border-radius()
+		display: inline-block
+		font-size: 14px
+		margin-left: 10px
+		padding: 5px 25px 5px 20px
+		vertical-align: top
+		width: 110px
+	
+		&:hover
+			background-position: right -328px
+
+	#search
+		background: #ffffff
+		@include border-radius(15px)
+		display: inline-block
+		margin-left: 10px
+		padding: 5px 10px
+
+	h1
+		margin-top: 0
+		
+	.follow, #knowledge_sharing_social
+		display: inline-block
+		margin: 0
+		vertical-align: top
+		width: 30%
+	
+	.follow
+		font-weight: bold
+	
+	#knowledge_sharing_social
+		width: 70%
+	
+	#welcome_message_knowledge_sh 
+		ul
+			margin: 0
+			padding: 0
+		
+		div 
+			margin-bottom: 30px
+			width: 247px
+		
+			li
+				border: none
+				display: inline-block
+				
+#larger_gmaps
+	a
+		background: transparent url(#{$background_fe}sprite_general.png) right -338px no-repeat
+		color: #000000
+		display: inline-block
+		font-size: 14px
+		@extend %opensanssemibold
+		font-weight: normal
+		padding: 2px 30px 3px 0 
+
+		&:hover
+			background-position: right -421px

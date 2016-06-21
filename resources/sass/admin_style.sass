@@ -1,0 +1,117 @@
+#admin_utils
+	text-align: right
+	
+	a
+		background: #C7CD2D
+		@include border-radius(10px)
+		color: #ffffff
+		display: inline-block
+		margin-left: 15px
+		min-width: 60px
+		padding: 7px 15px
+		text-align: center
+		text-shadow: 0 0 2px darken(#C7CD2D, 25)
+		vertical-align: top
+		
+		&:hover
+			background: lighten(#C7CD2D, 15)
+	
+	a.first
+		background: transparent
+		color: #000000
+		margin-left: 0
+		text-shadow: none
+		
+		&:hover
+			color: lighten(#000000, 35)
+
+#t_name, #t_delete
+	width: 15%
+
+#t_view
+	width: 10%
+	
+#t_date
+	width: 20%
+
+#admin_msg, #error_msg
+	color: #563a83
+	p
+		margin: 0
+
+#error_msg
+	color: #c15252
+
+.table_file
+	a
+		background: url(../images/be/download.png) center 4px no-repeat
+		display: inline-block
+		height: 40px
+		line-height: 2000em
+		overflow: hidden
+		width: 100%
+			
+		&:hover
+			background-position: center -153px
+			
+.admin_panel, .login
+	h1
+		border-bottom: 1px solid #C7CD2D
+		margin: 30px 0 5px
+		padding: 0 0 10px
+	
+	table
+		border-collapse: collapse
+		width: 100%
+		
+		a
+			font-weight: normal
+			
+			&:hover
+				color: lighten(#000000, 35)	
+		
+	td
+		padding: 10px 15px
+		text-align: center
+
+	.table_name, .table_description
+		text-align: left
+
+	.doc_delete 
+		a
+			color: #c15252
+			display: block
+			font-family: "Open Sans Bold",Verdana,sans-serif
+			text-align: center
+	
+			&:hover
+				color: lighten(#c15252, 15)
+	
+	.even
+		background: darken(#ffffff, 5)
+		
+	.custom_submit
+		margin-top: 20px
+		
+.login
+	h1
+		width: 440px
+	
+	label
+		display: inline-block
+		vertical-align: top
+		width: 28%
+		
+	.custom_textbox
+		border: 1px solid #D3D3D3
+		display: inline-block
+		@include border-radius(15px)
+		width: 67%	
+		padding: 5px 2% 5px 2%
+		vertical-align: top
+	
+	#login_form
+		.custom_submit
+			display: block
+			margin: 20px 0 0 auto
+	

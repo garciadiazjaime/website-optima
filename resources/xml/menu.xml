@@ -1,0 +1,113 @@
+<?xml version= "1.0"?>
+<menu>
+	<section>
+		<title>Home</title>
+		<href>home</href>
+	</section>
+	<section>
+		<title>About Us</title>
+		<href>about_us</href>
+		<child>
+			<section>
+				<title>Who we are</title>
+				<href>who_we_are</href>
+			</section>
+			<section>
+				<title>Optima's Direction</title>
+				<href>optimas_direction</href>
+			</section>
+			<section>
+				<title>Background &amp; Statement</title>
+				<href>background_statement</href>
+			</section>
+			<section>
+				<title>Leadership Team</title>
+				<href>leadership_team</href>
+			</section>
+			<section>
+				<title>Business Models</title>
+				<href>business_models</href>
+			</section>
+			<section>
+				<title>Our Partners</title>
+				<href>our_partners</href>
+			</section>
+		</child>
+	</section>
+	<section>
+		<title>services</title>
+		<href>services</href>
+		<child>
+			<section>
+				<title>HR Functional Support</title>
+				<href>hr_functional_support</href>
+			</section>
+			<section>
+				<title>Talent Search</title>
+				<href>talent_search</href>
+			</section>
+			<section>
+				<title>Lean Organizational Excellence</title>
+				<href>lean_organizational_excellence</href>
+			</section>
+			<section>
+				<title>Business Transitions</title>
+				<href>business_transitions</href>
+			</section>
+		</child>
+	</section>
+	<section>
+		<title>talent</title>
+		<href>talent</href>	
+		<child>
+			<section>
+				<title>Open Jobs</title>
+				<href>open_jobs</href>
+			</section>
+			<section>
+				<title>My account</title>
+				<href>my_account</href>
+			</section>
+			<section>
+				<title>Register</title>
+				<href>register</href>
+			</section>
+		</child>
+	</section>
+	<section>
+		<title>Experiencing Optima</title>
+		<href>experiencing_optima</href>
+		<child>
+			<section>
+				<title>Our Success Stories</title>
+				<href>our_success_stories</href>
+			</section>
+			<section>
+				<title>From Our Clients</title>
+				<href>from_our_clients</href>
+			</section>
+			<section>
+				<title>From Our Users</title>
+				<href>from_our_users</href>
+			</section>
+		</child>
+	</section>
+	<section>
+		<title>contact</title>
+		<href>contact</href>
+		<child>
+			<section>
+				<title>Contact Info</title>
+				<href>contact_info</href>
+			</section>
+			<section>
+				<title>FAQ about our Sevices</title>
+				<href>faq_about_services</href>
+			</section>
+			<section>
+				<title>Knowledge Sharing</title>
+				<href>knowledge_sharing</href>
+			</section>
+		</child>
+	</section>
+</menu>

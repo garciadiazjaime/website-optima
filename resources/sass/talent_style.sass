@@ -1,0 +1,529 @@
+/* ****************** TALENT ************** */
+#welcome_message_talent
+	h4
+		font-size: 16px
+		margin-bottom: 12px
+		text-transform: uppercase
+		
+	div
+		padding: 5px 16px 26px
+		
+	hr
+		height: 5px
+
+#tal_testimonial_title, #user_name_title
+	@extend %opensans
+
+#job_sorter
+	width: 100%
+	a, a:link
+		font-weight: normal
+	input
+		display: inline-block
+		margin-left: 10px
+
+
+#user_utils_bar, #login_bar
+	margin: 0
+	padding: 0
+
+	li
+		display: inline-block
+
+	a	
+		display: inline-block	
+		font-weight: normal
+		margin: 0 0 0 80px
+		vertical-align: top
+
+		&:hover
+			color: lighten(#000000, 30)
+
+	a.first
+		margin-left: 0
+	
+a.green_link
+	color: #C7CD2D
+	font-weight: normal
+	
+	&:hover
+		color: lighten(#C7CD2D, 20)
+#login_bar
+	margin-top: 4px	
+	margin-bottom: 173px
+	
+	a, span
+		display: inline-block
+		margin: 0
+		text-align: left
+		vertical-align: top
+		width: 30%
+	
+	span
+		padding: 15px 0 0
+		text-align: center
+		width: 20%
+	
+
+	a.green_button
+		background: #C7CD2D url(#{$background_fe}green_button_background.jpg) right -5px no-repeat
+		@include border-radius()
+		color: #ffffff
+		border-bottom: 3px solid #838E2D
+		padding: 15px 5%
+		font-size: 14px	
+
+		&:hover
+			background-position: right -113px
+		
+.jobs_list
+	font-size: 14px
+	padding: 0 40px 0 0
+	list-style-type: none
+	margin: 0
+	
+	a, a:link
+		color: #4E4D50
+		font-weight: normal
+		
+		&:hover
+			color: #302f31
+			
+			em
+				color: #7f55c4
+	
+		em
+			color: #563A83
+			font-style: normal
+	
+	li
+		min-height: 100px
+	
+.jobs_location
+	font-size: 14px
+	
+	a, a:link
+		color: #4E4D50
+		font-weight: normal
+		
+		&:hover
+			color: #302f31
+		
+
+	p
+		margin: 0
+		min-height: 100px
+
+#search
+	//background: url(#{$background_fe}sprite_talent.png) right 3px no-repeat
+	background: #ffffff
+	@include border-radius(15px)
+	border: #D3D3D3 1px solid 
+	padding: 5px 10px
+	width: 255px
+
+#pagination
+	list-style-type: none
+	margin: 0
+	padding: 0
+	text-align: right
+	
+	li
+		display: inline-block
+		vertical-align: top
+		
+		a, a:link
+			display: block
+			font-weight: normal
+			min-width: 20px
+			
+			&:hover
+				color: #363636
+
+.talent_gradient_box
+	@include background-image(linear-gradient(#ffffff 50%, #ededee 100%))
+	border: 1px solid #D6D6D6
+	@include border-radius()
+	font-size: 14px
+	min-height: 120px
+	padding: 25px 15px 10px
+	position: relative
+	
+	.talent_gr_bx_decoration
+		background: #C7CD2D
+		height: 7px
+		left: 15px
+		position: absolute
+		top: 6px
+		width: 270px
+	
+	.talent_gr_bx_wrapp
+		background: url(#{$background_fe}sprite_talent.png) left -236px no-repeat
+		min-height: 60px
+		padding: 0 0 0 75px
+	
+	p, h2, h3, h4
+		margin-top: 0
+
+#job_description
+	font-size: 14px
+
+	h1
+		display: block
+		@extend %opensans
+		font-size: 21px
+		margin: 20px 0 5px
+		text-transform: none
+
+	h2	
+		font-size: 14px
+		text-transform: none
+		
+	ul
+		padding: 0 0 0 20px
+
+
+#apply_job_form
+	color: #4D4D4F
+	width: 580px
+	
+	strong
+		color: #4D4D4F
+		
+	.third.first.collapse, .two_third
+		padding-bottom: 0
+		
+	label
+		width: 100%
+	
+	.custom_textbox, .custom_textarea
+		border: 1px solid #D3D3D3
+	
+	.custom_textbox
+		padding: 5px 3px
+		width: 98.3%
+
+	.custom_textarea
+		height: 40px
+		margin: 0 0 10px
+		width: 100%
+		
+	#terms_warning
+		display: inline-block
+		vertical-align: top
+		margin: 0 5px 0 0
+		width: 219px
+		
+		a
+			text-decoration: underline
+			text-transform: lowercase
+		
+	.custom_submit
+		@include border-radius(0 0 5px 5px)
+		display: inline-block
+		width: 30%
+#terms
+	display: inline-block
+	margin: 0 5px 0 0
+	vertical-align: top
+	
+.upload_file_button, a.upload_file_button, a:link.upload_file_button
+	@include background-image(linear-gradient(#ffffff 50%, #ededee 100%))
+	border: 1px solid #D3D3D3
+	color: #4D4D4F
+	display: inline-block
+	font-weight: normal
+	margin: 0 0 10px
+	padding: 5px 20px
+	@include transition(background-image 0.5s)
+	vertical-align: top
+	
+	
+	&:hover
+		@include background-image(linear-gradient(#ffffff 50%, #c4c4c4 100%))
+	
+.upload_file_status	
+	color: #4D4D4F
+	display: inline-block
+	margin: 5px 0 0 20px
+	vertical-align: top
+
+#login_form
+	width: 440px
+	
+	.custom_submit, .custom_button
+		display: inline-block
+		vertical-align: top
+
+#forgot_password
+	color: #7F7F7F
+	display: inline-block
+	font-size: 88%
+	margin: 10px 167px 0 0
+	width: 160px
+
+	&:hover
+		color: lighten(#7F7F7F, 30)
+
+a.normal_weight
+	font-weight: normal
+
+.hidden
+	display: none
+
+#applications_table
+		
+	p
+		display: inline-block
+		margin: 0
+	
+	.col_applied, .col_job, .col_send
+		display: inline-block
+		padding: 0 0 0 2%
+		vertical-align: top
+		width: 28%
+		
+	.col_send
+		color: #563A83
+		width: 34%
+		
+		a
+			color: #563A83
+			font-weight: normal
+			
+			&:hover
+				color: lighten(#563A83, 20)
+	
+	table
+		border-collapse: collapse
+		margin: 25px 0 50px
+		width: 100%
+		
+		.col_applied, .col_job, .col_send
+			display: table-cell
+			padding: 5px 0 5px 2%
+		
+		.col_job
+			color: #4E4D50
+			font-weight: bold
+		
+	tr
+		border-bottom: 1px solid #C7CD2D
+	
+	td 
+		padding: 5px 0
+		
+#app_header
+	background: #f7f7f7
+	border: #d4d4d4 1px solid
+	border-bottom: #d4d4d4 2px solid
+	font-weight: bold
+	margin: 0 0 10px
+	padding: 7px 5px
+
+	
+.talent
+	
+	h1
+		margin: 50px 0 5px
+		
+	hr
+		margin: 15px 0 20px
+		
+	#content
+		padding-bottom: 50px
+		padding-top: 0
+		margin: 155px 0 0
+		
+	label
+		display: inline-block
+		margin: 0 0 10px
+		width: 20%
+		
+	.custom_textbox, select
+		display: inline-block
+		margin: 0 0 10px
+		width: 78%
+		
+	select
+		width: 79%
+		
+	.gray_title
+		color: #4D4D4F
+		font-size: 14px
+		text-transform: none
+		
+	.custom_submit, .custom_button
+		background: url(#{$background_fe}submit_button_background.jpg) right -220px no-repeat
+		font-size: 14px
+		padding: 5px 25px 5px 20px
+		width: 110px
+		
+		&:hover
+			background-position: right -328px
+			
+	.custom_button
+		@include border-radius(0 0 5px 5px)
+		
+	.small_text
+		font-size: 10px
+		
+	a.plus_link_left
+		background-position: left -328px
+		color: #7F7F7F
+		font-family: 'Open Sans Regular', Verdana, sans-serif
+		max-width: 230px
+		padding-left: 40px
+		
+		&:hover
+			background-position: left -411px
+			color: #807d7d
+	
+	#form_talent_search
+		margin: 0
+		height: 90px
+	
+.short
+	margin-top: 0
+	
+.talent_login
+	#login_bar
+		margin-bottom: 0
+		height: 144px
+		
+		
+.system_message
+	color: #4e4d50
+	
+	
+	h1
+		border-bottom: 1px solid #c7cd2d
+		color: #563a83
+		font: 34px 'Open Sans Semibold', Verdana, sans-serif
+		letter-spacing: 0.04em
+		margin: 0 0 15px
+		padding: 0 0 10px
+		text-transform: none
+	
+	.extra_top_padding
+		padding-top: 57px
+	
+	hr
+		background: #c7cd2d
+		border: none
+		display: block
+		height: 1px
+		margin: 0 0 15px
+		width: 100%
+	
+	.big_text
+		font-size: 122%
+		
+		a
+			color:	#563a83
+			font-family: 'Open Sans Semibold', Verdana, sans-serif
+			font-weight: normal
+			
+			&:hover
+				color: lighten(#563a83, 15)
+		
+	.strong_purple_text
+		font-family: 'Open Sans Semibold', Verdana, sans-serif
+		font-weight: normal
+		
+	.search_icon
+		background: url(../images/email/search_icon.png) right 6px no-repeat
+		display: inline-block
+		font-weight: normal
+		padding: 8px 30px 0 0
+		
+		&:hover
+			color: lighten(#4e4d50, 20)
+		
+	.follow_icons		
+		margin: 20px 0 0
+			
+		p, ul, ul li
+			display: inline-block
+			vertical-align: top
+		
+		p
+			font: 14px 'Open Sans Bold', Verdana, sans-serif
+			padding: 0 0 20px
+		ul
+			li
+				margin-left: 10px
+			
+				a
+					background: url(../images/fe/social_sprite.png) 0 0 no-repeat 
+					display: block
+					height: 20px
+					width: 21px
+				
+				a.facebook:hover
+					background-position: 0 -50px
+
+				a.twitter
+					background-position: -62px 0
+
+					&:hover
+						background-position: -62px -50px
+
+	a.green_button
+		background: #C7CD2D url(#{$background_fe}green_button_background.jpg) right -9px no-repeat
+		@include border-radius()
+		border-bottom: 3px solid #838E2D
+		color: #ffffff
+		font-family: "Open Sans Regular",Verdana,sans-serif
+		margin: -5px 0 0 30px
+		padding: 10px 50px 10px 25px
+		font-size: 14px	
+
+		&:hover
+			background-position: right -113px
+			color: #ffffff
+			
+.third.second
+	margin-left: 3%
+	h3
+		color: #4d4d4f
+		font-size: 13px
+		text-transform: none
+		
+		
+#recover_password_form
+	.custom_submit		
+		width: 220px
+		
+	label
+		margin: 0 2.7% 10px 0
+		width: 37%
+		
+	.custom_textbox
+		margin: 0 0 10px
+		padding: 0 1%
+		width: 57%
+		
+	a
+		&:hover
+			color: lighten(#000000, 35)
+			
+.talent 
+	.login 
+		h1
+			width: auto
+			
+		h2
+			border-bottom: 1px solid #C7CD2D
+			margin: 30px 0 5px
+			padding: 0 0 10px
+			
+
+#socialMediaIcons
+	display: inline-block
+	margin-left: 50px
+	
+	div
+		display: inline-block
+		margin: 0 10px 0 0
+		vertical-align: top

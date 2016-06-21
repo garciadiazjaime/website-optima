@@ -1,0 +1,210 @@
+hr.full_width_experience_separator
+	background: url(#{$background_fe}separators_sprite.png) 0 -290px no-repeat
+	height: 7px
+	max-width: 100%
+	width: 934px
+	
+#our_success_stories
+	h2
+		@extend %opensans
+		font-size: 26px
+		letter-spacing: .03em
+		margin: 0 0 30px
+		text-transform: none
+		
+	.big_text
+		margin: 0 0 0 60px
+		
+#our_clients_slider
+	background: url("../images/fe/sprite_experience.jpg") 225px 27px  no-repeat
+	font-size: 15px
+	
+	.slide
+		display: none
+		
+	.slide.visible
+		display: block	
+
+.testimonial_logo
+	height: 145px
+	margin: 0 20px 0 0
+	width: 310px	
+	
+.testimonial_text
+	width: 605px
+			
+#our_clients_slide
+	height: 70px
+	margin: 20px 0 50px
+	overflow: hidden
+	padding: 0
+	position: relative
+	width: 1800px
+	
+	li
+		background: url(#{$background_fe}sprite_logos.jpg) -985px 0 no-repeat
+		display: inline-block
+		height: 70px
+		line-height: 500000em
+		width: 175px
+		overflow: hidden
+		vertical-align:  top
+	
+	#our_cl_great_batch
+		background-position: -985px 0
+
+	#our_cl_navico
+		background-position: -985px -118px
+		width: 155px
+
+	#our_cl_3m
+		background-position: -985px -238px
+		width: 99px
+
+	#our_cl_kavlico
+		background-position: -985px -370px
+
+	#our_cl_ti_automotive
+		background-position: -985px -507px
+		width: 130px
+
+	#our_cl_trw
+		background-position: -985px -642px
+		width: 100px
+
+	#our_cl_amcor
+		background-position: -985px -805px
+		width: 80px
+	#our_cl_valeo
+		background-position: -985px -898px
+		width: 80px
+	#our_cl_fender
+		background-position: -985px -1116px
+		width: 90px
+	#our_cl_medtronic
+		background-position: -985px -1303px
+		width: 120px
+	#our_cl_nx_stage
+		background-position: -985px -1016px
+		width: 113px
+	
+	#white_decoration
+		@include background-image(linear-gradient(left, rgba(255, 255, 255, 0) 58%, #ffffff 97%))
+		display: block
+		height: 55px
+		right: 0
+		pointer-events: none
+		position: absolute
+		top: 0
+		width: 30%
+	
+#from_our_users
+	.purple_area_decoration
+		background: url(#{$background_fe}service_line_decoration.jpg) center top no-repeat
+		height: 10px
+		margin: -3px 0 0
+		
+	h2
+		font-size: 22px
+		letter-spacing: .03em
+		margin: 25px 0 10px
+		
+		
+#testimonial_users_slider
+	background: url("../images/fe/sprite_experience.jpg") left 22px  no-repeat
+	height: 300px
+	margin: 60px 0 0
+	position: relative
+	width: 100%
+
+	p
+		margin-top: 0
+	
+	.slide
+		display: inline-block
+		padding: 0 30px 0 70px
+		position: relative
+		width: 485px
+		
+	.slide.visible, .slide.partially_visible_r, .slide.partially_visible_l
+		display: inline-block
+		
+	.slide.partially_visible_r, .slide.partially_visible_l
+		position: absolute
+		top: 0
+		left: 635px
+		
+	
+	.people_icon_decoration
+		display: none
+		height: 56px
+		left: 0
+		position: absolute
+		top: 0
+		width: 56px
+
+
+	#white_decor_exp
+		@include background-image(linear-gradient(left, rgba(255, 255, 255, 0) 58%, #ffffff 97%))
+		display: block
+		height: 200px
+		right: 0
+		pointer-events: none
+		position: absolute
+		top: 0
+		width: 30%
+
+.experience
+	.purple_green_line
+		span
+			margin: 0 0 -1px -50px
+			width: 365px
+
+	.purple_area
+		background-image: none
+#slideshow_experience, #slideshow_experience2, #slideshow_experience3
+	p
+		margin: 0
+		width: 92%
+		
+	ul.bjqs-controls
+		margin-top: -57px
+
+		.bjqs-prev, .bjqs-next
+			background: url(#{$background_fe}sprite_general.png) left -147px no-repeat
+			display: inline-block
+			height: 20px
+			position: relative
+			overflow: hidden
+			width: 15px
+			z-index: 10
+		.bjqs-prev
+			margin-right: 10px
+
+			&:hover
+				background-position: left -190px
+
+		.bjqs-next
+			background-position: right -228px
+
+			&:hover
+				background-position: right -265px
+
+#slider-wrap
+	overflow: hidden
+
+#slideshow_experience2
+	ul.bjqs-controls
+		margin-top: -30px
+
+#slideshow_experience3
+	ul.bjqs-controls
+		margin-top: -55px
+	li 
+		width: 835px
+
+
+
+
+
+

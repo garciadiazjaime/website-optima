@@ -1,0 +1,31 @@
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:990; position:absolute; right: 0; top: 3px;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+.bjqs-markers.h-centered{display:none}
+.bjqs-next a, .bjqs-prev a{display: inline-block; height: 20px; width:18px; }
+.bjqs-next a{background:url("../images/fe/sprite_general.png") no-repeat right -67px}
+.bjqs-next a:hover{background-position:right -109px}
+.bjqs-next a span{display:none}
+.bjqs-prev a{background:url("../images/fe/sprite_general.png") no-repeat left 0}
+.bjqs-prev a:hover{background-position:left -32px}
+.bjqs-prev a span{display:none}
+.bjqs-prev, .bjqs-next{
+	display: inline-block;
+}
+.bjqs-prev{
+	margin-right:15px;
+}
+
+#slideshow_why{
+	padding: 30px 0 0;
+}

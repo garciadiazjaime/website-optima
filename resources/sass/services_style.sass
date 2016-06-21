@@ -1,0 +1,338 @@
+/* ****************** SERVICES ************** */
+#services_list
+	list-style-type: none
+	margin: 0
+	padding: 0
+	text-align: center
+	
+	li
+		background: url(#{$background_fe}sprite_services.jpg) 35px 0 no-repeat
+		@extend %opensanssemibold
+		font-size: 15px
+		min-height: 185px
+	
+	li.first
+		a
+			padding: 130px 0 0
+	
+	a
+		background-color: transparent
+		display: block
+		font-weight: normal
+		padding: 130px 0 0 20px
+		@include transition(background-color 0.3s)
+		
+	a:hover	
+		background-color: rgba(255,255,255, .3)
+	
+	#serv_hr
+		background-position: 40px 0
+		
+	#serv_talent
+		background-position: -272px 0
+	
+	#serv_lean
+		background-position: -582px 0	
+		
+	#serv_business
+		background-position: -895px 0
+		
+.purple_title
+	color: #563A83
+	@extend %opensansbold
+	font-size: 15px
+	
+.purple_area
+	background: #563A83 url(#{$background_fe}purple_area_shadow.jpg) center bottom no-repeat
+	border-top: 3px solid #381183
+	color: #ffffff
+	font-size: 22px
+	padding: 0 0 30px
+	text-align: center
+
+
+	#common_phrases_slider_wrapp
+		height: 70px !important		
+		
+	#quotes_nav, #common_phrases_slider_wrapp
+		background: url(#{$background_fe}service_line_decoration.jpg) center top no-repeat
+		height: 70px
+		margin-top: -3px
+		overflow: hidden
+		padding: 40px 0 0
+		
+		ul.bjqs-controls
+			top: 20px
+			
+		.bjqs
+			height: 70px
+			
+		
+	.phrases_slide
+		display: none
+		padding: 10px 0 20px
+	
+	.visible
+		display: block
+
+#common_phrases_slider
+	margin: 0 0 30px
+.serv_main_image
+	background: url(#{$background_fe}sprite_services.jpg) -827px -341px no-repeat
+	height: 235px
+	width: 370px
+	
+#hr_functional_support,	#talent_search, #lean_organizational_excellence, #business_transitions
+	h2.purple_title
+		margin: 0 0 30px
+
+#hr_functional_support 
+	h2
+		background-position: -9px -429px
+		margin-left: -5px
+		
+	.serv_main_image
+		background-position: -827px -341px
+	
+#talent_search
+	h2
+		background-position: -9px -718px
+		margin-left: -5px
+
+	.serv_main_image
+		background-position: -827px -742px
+	
+	#selection_graph
+		background-position: -10px -1640px
+		height: 490px
+		width: 535px
+		
+		
+#lean_organizational_excellence
+	h2
+		background-position: -17px -1056px
+		margin-left: -5px
+
+	.serv_main_image
+		background-position: -827px -1181px
+
+		
+#business_transitions
+	h2
+		background-position: -17px -1429px
+		margin-left: -5px
+
+	.serv_main_image
+		background-position: -827px -1652px
+		
+		
+.main_service_phrase
+	background: url(#{$background_fe}sprite_services.jpg) -10px -3289px no-repeat	
+	@extend %opensanslight
+	font-size: 28px
+	height: 38px
+	margin: 0 0 50px
+	padding: 30px 30px 40px
+	text-align: center
+	width: 875px
+	
+	p
+		margin: 0
+		
+.main_service_phrase.two_lines
+	height: 78px
+	padding: 10px 30px 20px
+	
+.column.no_bottom_padding
+	padding-bottom: 0
+	
+#small_paragraph_title
+	h3
+		margin-left: 10%
+		width: 80%
+		
+	hr
+		width: 90%
+		
+	p
+		margin-left: 10%
+		width: 80%
+		
+#balance_image		
+	height: 270px
+	margin: 0 auto
+	width: 620px
+
+	.balance_operating, .balance_organizational
+		background: url(#{$background_fe}sprite_services.jpg) -630px -2226px no-repeat
+		color: #666666
+		display: inline-block
+		height: 270px
+		line-height: 1em
+		position: relative
+		vertical-align: top
+		width: 310px
+		
+		
+		span
+			left: 18px
+			position: absolute
+			top: 148px
+		
+	.balance_operating:hover, .balance_operating.current, .balance_organizational:hover, .balance_organizational.current 
+		color: #323232
+			
+	.balance_organizational
+		span
+			left: auto
+			right: 56px
+			top: 112px
+		
+		
+	.balance_operating:hover, .balance_operating.current
+		background-position: 0 -2226px
+		
+	.balance_organizational
+		background-position: -310px -2226px
+		
+	.balance_organizational:hover, .balance_organizational.current 
+		background-position: -940px -2226px
+
+#organization_excellence_slides
+	margin: 80px 0 60px
+		
+	#wrapp_operating_system, #titles_operating_system
+		display: inline-block
+		vertical-align: top
+	
+	#wrapp_operating_system
+		background: url(#{$background_fe}services_big_graphics.jpg) 0 0 no-repeat
+		height: 555px
+		padding: 25px 60px 30px 25px
+		width: 670px
+		
+	#titles_operating_system
+		padding: 0 0 0 10px
+		width: 165px
+		
+		h4
+			font-size: 16px
+			font-weight: normal
+			padding: 20px 0 0
+			text-transform: uppercase
+			
+		h4.first
+			height: 420px
+			
+	
+	.third
+		padding-bottom: 0
+		
+	.gray_content
+		height: 150px
+		padding: 10px 0 0
+		
+	.gray_content.first
+		height: 100px
+		padding: 0
+	
+	.iceberg_graph
+		height: 220px
+		line-height: 500000em
+		margin: 0
+		overflow: hidden
+		
+	.iceberg_graph.first
+		height: 93px
+		
+#organization_excellence_slides, #business_transitions	
+	h3
+		@extend %opensans
+		font-weight: normal
+		
+		strong
+			@extend %opensansbold
+			
+	.slide
+		display: none
+	
+	.slide.visible
+		display: block
+			
+#bus_str_table
+	background: url(#{$background_fe}services_big_graphics.jpg)  0 -877px no-repeat
+	
+	.column
+		display: inline-block
+		margin: 80px 0 0 7px
+		width: 120px
+		
+	.column.first
+		margin: 80px 19px 0 6px
+		width: 95px
+		
+	#org_capability
+		margin: 80px 40px 0
+		width: 200px
+		
+	#org_systems
+		margin: 80px 40px 0 0
+		width: 165px
+		
+	#org_recognition
+		margin: 80px 10px 0 0
+		width: 180px
+		
+	h4
+		margin-bottom: 30px
+		
+#business_cycle_img
+	background: url(#{$background_fe}sprite_services.jpg) -25px -2750px no-repeat
+	height: 340px
+	width: 610px
+
+a.gototop_serv
+	background: url(#{$background_fe}sprite_services.jpg) -1125px -2776px no-repeat
+	display: block
+	height: 49px
+	line-height: 500000em
+	margin: -69px 0 0 auto
+	overflow: hidden
+	width: 72px
+	opacity: 1
+	@include transition(opacity 0.2s)
+	
+	&:hover
+		opacity: .4
+
+	
+.services
+	h2
+		background: url(#{$background_fe}sprite_services.jpg) -10px -429px no-repeat
+		display: inline-block
+		padding: 15px 0 20px 80px
+
+	h2.purple_title
+		background: transparent
+		display: block
+		@extend %opensanslight
+		font-size: 27px
+		margin-left: 0
+		line-height: 1em
+		padding: 0
+		text-transform: none
+		width: auto
+
+	.purple_green_line
+		margin: 10px 0 30px
+
+		span
+			margin: 0 0 -1px -50px
+			width: 365px
+
+	.big_text
+		font-size: 16px
+		margin: 0 0 0 38px
+
+	#big_contact_button
+		font-size: 18px
