@@ -64,27 +64,10 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 
-$db['labs']['hostname'] = 'localhost';
-$db['labs']['username'] = 'otbdom_optima';
-$db['labs']['password'] = 'optima2013';
-$db['labs']['database'] = 'otbdom_optima';
-$db['labs']['dbdriver'] = 'mysql';
-$db['labs']['dbprefix'] = '';
-$db['labs']['pconnect'] = TRUE;
-$db['labs']['db_debug'] = TRUE;
-$db['labs']['cache_on'] = FALSE;
-$db['labs']['cachedir'] = '';
-$db['labs']['char_set'] = 'utf8';
-$db['labs']['dbcollat'] = 'utf8_general_ci';
-$db['labs']['swap_pre'] = '';
-$db['labs']['autoinit'] = TRUE;
-$db['labs']['stricton'] = FALSE;
-
-
-$db['server']['hostname'] = 'localhost';
-$db['server']['username'] = 'optima_user';
-$db['server']['password'] = 'pssw_optima';
-$db['server']['database'] = 'optima';
+$db['server']['hostname'] = $_ENV["OPENSHIFT_MYSQL_DB_HOST"];
+$db['server']['username'] = $_ENV["DB_USER"];
+$db['server']['password'] = $_ENV["DB_PASSWORD"];
+$db['server']['database'] = $_ENV["DB_NAME"];
 $db['server']['dbdriver'] = 'mysql';
 $db['server']['dbprefix'] = '';
 $db['server']['pconnect'] = TRUE;
